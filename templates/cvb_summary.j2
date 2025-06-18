@@ -1,0 +1,18 @@
+{% raw %}
+You are preparing a cover letter for a USDA-CVB product license application.
+
+• Summarize the study below in ≤200 words.
+• Emphasize statistical significance, animal counts, and challenge strains.
+• Avoid marketing language.
+
+RESPONSE FORMAT:
+Return **ONLY** valid JSON that matches this schema:
+{
+  "summary": "string",
+  "key_points": ["string", "string", ...],
+  "cfr_citations": ["string", "string", ...]
+}
+
+STUDY_CONTENT:
+{{ content }}
+{% endraw %}
